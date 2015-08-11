@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cybernet.projectx.fragments.StartPlanVacationFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NewVacationTextStyle"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="@string/start_date_defult_value"
+            android:id="@+id/start_date"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NewVacationTextStyle"
+            android:editable="false"
+            android:focusable="false"
+            android:layout_gravity="bottom"
+            android:hint="@string/end_date_default_label"
+            android:id="@+id/end_date"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan My Vacation"
+            android:id="@+id/plan_button"
+            style="@style/MainButtonStyle"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Spot title"
+        android:id="@+id/spot_title"
+        android:background="@color/main_color"
+        style="@style/NewVacationTextStyle"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_below="@+id/spot_title">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_alignTop="@+id/spot_name"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/spot_name"
+            android:layout_above="@+id/spot_short_description" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Spot subtitle"
+            android:id="@+id/spot_subtitle"
+            android:background="@color/main_color"
+            style="@style/SubtitleTextStyle"
+            android:layout_alignParentStart="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/spot_icon"
+            android:src="@drawable/sf_icon_1"
+            android:layout_margin="@dimen/abc_action_bar_default_padding_material"
+            android:layout_below="@+id/spot_subtitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/short_text_sample"
+            android:id="@+id/spot_name"
+            android:layout_alignTop="@+id/spot_icon"
+            android:layout_toEndOf="@+id/spot_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_long_text"
+            android:id="@+id/spot_short_description"
+            android:maxLines="2"
+            android:layout_below="@+id/spot_name"
+            android:layout_alignStart="@+id/spot_name"
+            android:layout_alignEnd="@+id/spot_name" />
+
+    </RelativeLayout>
+</RelativeLayout>

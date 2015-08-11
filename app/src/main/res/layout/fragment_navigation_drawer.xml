@@ -1,0 +1,28 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="136dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/san_francisco_bridge_for_menu"
+        android:scaleType="fitStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#cccc"
+        tools:context=".NavigationDrawerFragment"
+        android:id="@+id/listView"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
